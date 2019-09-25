@@ -17,10 +17,11 @@ def long_planeteer_calls(array)# code an argument here
   # Your code here
   memo = array[0]
   array.reduce do |memo, word|
+    memo = word
   if (memo.length > 4)
-    memo = true
-    elsif memo <= 4
-    memo.length = false
+    return true
+  else
+    return false
 end
 end
   memo
