@@ -27,7 +27,11 @@ end
   memo
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  memo = array[0]
+  array.reduce do |memo,word| memo = word
+  if cheese_types.include?(memo) memo : nil
+  
 end
