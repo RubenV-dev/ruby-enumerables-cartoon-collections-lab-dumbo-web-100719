@@ -32,6 +32,8 @@ def find_the_cheese(array)# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
   memo = array[0]
   array.reduce do |memo,word| memo = word
-  cheese_types.include?(memo)
+  if cheese_types.include?(memo)
+    return memo
+  end
 end
 end
